@@ -36,4 +36,13 @@ public class NumerosMediosTest {
         ArrayList<Integer> resultado = NumerosMedios.calcularNumerosMedios(-1, 3);
         assertEquals(numerosMedios, resultado);        
     }
+
+    @Test
+    public void test3CalcularNumerosMedios() {
+        ArrayList<Integer> numerosMedios = NumerosMedios.calcularNumerosMedios(10, 20);
+
+        for (int numero : numerosMedios) {
+            assertTrue(numero % 2 != 0);
+        }     
+    }
 }

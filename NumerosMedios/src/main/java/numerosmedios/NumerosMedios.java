@@ -45,12 +45,16 @@ public class NumerosMedios {
             if (num1 > num2) {
                 for (int i = 0; i < num1 - num2 - 1; i++) {
                     numeroInicial--;
-                    numerosMedios.add(numeroInicial);                    
+                    if(numeroInicial % 2 = 0){
+                        numerosMedios.add(numeroInicial);
+                    }                                        
                 }
             } else if (num2 > num1) {
                 for (int i = 0; i < num2 - num1 - 1; i++) {
                     numeroInicial++;
-                    numerosMedios.add(numeroInicial);                   
+                    if(numeroInicial % 2 = 0){
+                        numerosMedios.add(numeroInicial);
+                    }                   
                 }
             }
         } //Si no hay números en medio del número 1 y número 2

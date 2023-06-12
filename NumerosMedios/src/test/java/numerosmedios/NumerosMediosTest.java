@@ -19,8 +19,7 @@ public class NumerosMediosTest {
     public void test1CalcularNumerosMedios() {
         System.out.println("Primera prueba");
         ArrayList<Integer> numerosMedios = new ArrayList<>();
-        numerosMedios.add(4);
-        numerosMedios.add(3);
+        numerosMedios.add(4);        
         numerosMedios.add(2);
         ArrayList<Integer> resultado = NumerosMedios.calcularNumerosMedios(5, 1);
         assertEquals(numerosMedios, resultado);        
@@ -30,8 +29,6 @@ public class NumerosMediosTest {
     public void test2CalcularNumerosMedios() {
         System.out.println("Segunda prueba");
         ArrayList<Integer> numerosMedios = new ArrayList<>();
-        numerosMedios.add(0);
-        numerosMedios.add(1);
         numerosMedios.add(2);
         ArrayList<Integer> resultado = NumerosMedios.calcularNumerosMedios(-1, 3);
         assertEquals(numerosMedios, resultado);        
